@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Check Out Page</title>
+
+    <style>
+    #form_container{
+        padding-left:30px;
+    }
+    </style>
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+</head>
+
+<body>
+        <nav class="navbar fixed-top  navbar-dark bg-dark" style="background-color:black;">
+            
+            <!---<a class = "navbar-brand" href="#" style="color:white;">FabFlix</a>--->
+            
+            <div class="collapse navbar-collapse" id ="navbarSupportedContent">
+                
+                <ul class="navbar-nav mr-auto" style="list-style-type: none;">
+                
+                    <li class="nav-item active" style="list-style-type: none;">
+
+                        <a class="nav-link" href= "index.html" style="color:white; padding-left:30px; padding-right:30px; display:inline-block; float:none;">Home</a>
+
+                    </li>
+  
+                    <li class="nav-item active" style="list-style-type: none;">
+
+                        <a class="nav-link" href="search.html" style="color:white; padding-left:30px; padding-right:30px; display:inline-block; float:none;">Advanced Search</a>
+
+                    </li>
+                    
+                    <li class="nav-item active" style="list-style-type: none;">
+
+                        <a class="nav-link" href="login.html" style="color:white; padding-left:30px; padding-right:30px; display:inline-block; float:none;">Sign in</a>
+                    </li>
+
+                    
+                    <li>
+                    <a href ="cart.html" id= "checkout" class="btn btn-info" role = "button">Check Out</a>   
+                    
+                    </li>
+                    
+                </ul>
+
+                   
+            </div>
+    
+        </nav>
+<div id = "form_container">
+  <form id="checkoutForm" method="post" action="#">
+
+    <h2>Customer Information</h2>
+    
+    <label for="firstname">First Name</label>  
+    <input type="text" name="fname" placeholder="Peter">   
+    <br/>
+    
+    <label for="lastname">Last Name</label>     
+    <input type="text" name="lname" placeholder="Anteater">   
+
+    <h2>Payment Information</h2>
+
+    <label for="firstname">Credit Card Number</label>  
+    <input type="text" name="cardnumber"placeholder="XXXX-XXXX-XXXX-XXXX">   
+    <br>
+    
+    <label for="lastname">Exp Date</label>     
+    <input type="text" name="cardexpdate" placeholder="ex. 2020-01-01">   
+    <br>
+    <input type="submit" value="Proceed to Check Out">
+  </form>
+
+</div>
+<div id="checkout_error_message"></div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+<script src="./checkout.js"></script>
+</body>
+</html>
+  

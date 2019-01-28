@@ -1,0 +1,64 @@
+<!-- This page will be redirected from any url if you are not logged in -->
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>User Login</title>
+    
+    <style>
+    
+    	h2{
+    		color:white;
+    	}
+    
+    	body{
+    		background-color: #010000;
+    		color:white;
+    		font-weight:200;
+    		font-style: normal;
+    		font-size: 15px;
+    	}
+    	
+    	::placeholder{
+ 			font-style: italic;
+ 			text-align:left;
+    	}
+    	input{
+    		border: #000;
+    		padding: 2px;
+    		align: center
+    	}
+    	
+    	
+    	
+    </style>
+
+    <script src='https://www.google.com/recaptcha/api.js'></script>
+</head>
+
+
+<body>
+<h2 align="center">User Login</h2>
+<!-- Set the method to POST to avoid username/password showing on URL
+     Disable the default action because our JS function will handle it. -->
+     
+<form id="login_form" method="post" action="#">
+    <label><b>Username</b></label>
+    <input type="text" placeholder="Enter Username" name="username">
+    <br>
+    <label><b>Password  </b></label>
+    <input type="password" placeholder="Enter Password" name="password">
+    <br>
+    <input type="submit" value="Login">
+    <div class="g-recaptcha" data-sitekey="6Lejs1kUAAAAAHZ_iqjvtvUeMz0jNIzThSofMSGQ"></div>
+</form>
+
+<div id="login_error_message"></div>
+
+<!-- include jQuery-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<!-- include our own JS file -->
+<script src="./loginDashboard.js"></script>
+
+</body>
+</html>

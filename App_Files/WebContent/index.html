@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+
+<html lang='en'>
+<head>
+        
+<meta charset="utf-8">
+    
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>Fablix</title>
+	           		
+	<!-- Using jQuery -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	
+	<!-- include jquery autocomplete JS  -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.devbridge-autocomplete/1.4.7/jquery.autocomplete.min.js"></script>
+	<link rel="stylesheet" href="style.css">
+	
+	<!-- Latest compiled JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+	
+		
+	<style>
+	
+		body{
+		    background-color: #680000;
+		}
+		
+		#wrapper{
+			width: 1005px;
+			margin : 0 auto;
+		}
+		
+		#genrecolumn,titlecolumn{
+			border: 1px solid white;
+	        float: left;
+	        min-height: 450px;
+	        color: #3B3B3B;
+		}
+		#genrecolumn{
+			 width: 250px;
+	         background-color: white;
+		}
+
+		 #titlecolumn {
+		 	 padding-top: 1px;
+	         width: 750px;
+	         background-color: white;
+   		}
+        #body-text{
+            padding-left:50px;
+        }
+	    .container{
+		margin-top:23.5px;
+		}
+		
+		
+	</style>
+                            
+</head>
+    
+<body>
+
+    <head>
+        <meta charset="utf-8">
+            <meta http-equiv="X-UA-Compatible" content="IE=edge">
+                <meta name="viewport" content="width=device-width, initial-scale=1">
+                    
+                    <title>Fablix</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    </head>
+
+		<body>
+        <nav class="navbar fixed-top  navbar-dark bg-dark" style="background-color:black;">
+            
+            <!---<a class = "navbar-brand" href="index.html" style="color:white;">FabFlix</a>--->
+            
+            <div class="collapse navbar-collapse" id ="navbarSupportedContent">
+                
+                <ul class="navbar-nav mr-auto" style="list-style-type: none;">
+                
+                    <li class="nav-item active" style="list-style-type: none;">
+
+                        <a class="nav-link" href= "index.html" style="color:white; padding-left:30px; padding-right:30px; display:inline-block; float:none;">Home</a>
+
+                    </li>
+  
+                    <li class="nav-item active" style="list-style-type: none;">
+                        <a class="nav-link" href="search.html" style="color:white; padding-left:30px; padding-right:30px; display:inline-block; float:none;">Advanced Search</a>
+                    </li>
+                    
+                    <li class="nav-item active" style="list-style-type: none;">
+
+                        <a class="nav-link" href="login.html" style="color:white; padding-left:30px; padding-right:30px; display:inline-block; float:none;">Sign in</a>
+                    </li>
+
+                    <li>
+                    <a href ="cart.html" id= "checkout" class="btn btn-info" role = "button" style="margin-right:20px;">Check Out</a>   
+                    </li>
+
+                </ul>
+                
+                <!-- SEARCH BOX START -->
+                
+				<div class = "container">
+				
+				<form id="search_form" method="get" action="movielist.html?search=true">
+				
+   					<input type="hidden" name="search" align = "right" value="true">
+   					
+					<input type="text" name="title" placeholder ="Enter movie title" id="autocomplete"/>	
+				    <input type="hidden" placeholder="Enter Year" name="year">
+				    <input type="hidden" placeholder="Enter Director" name="director">
+				    <input type="hidden" placeholder="Enter Star's name" name="star_name">
+				   
+    				<input type="submit" value="Search Now!">
+    				
+				</form>
+				</div>
+				
+				<script src="autocompletion.js"></script>
+                <!-- END OF SEARCH BOX -->
+            </div>
+
+        </nav>
+ 
+        <div id = "body-text">
+     		<!--- <H3>Welcome to FabFlix</H3>--->
+            <div id="genrecolumn">
+            <H4>Browse Movies by Genre</H4>
+            
+            <a href="movielist.html?browse_by_genre=true&genre_id=1" id="1">Action</a><br>
+            <a href="movielist.html?browse_by_genre=true&genre_id=2" id="2">Adult</a><br>
+            <a href="movielist.html?browse_by_genre=true&genre_id=3" id="3">Adventure</a><br>
+            <a href="movielist.html?browse_by_genre=true&genre_id=4" id="4">Animation</a><br>
+            <a href="movielist.html?browse_by_genre=true&genre_id=5" id="5">Biography</a><br>
+            <a href="movielist.html?browse_by_genre=true&genre_id=6" id="6">Comedy</a><br>
+            <a href="movielist.html?browse_by_genre=true&genre_id=7" id="7">Crime</a><br>
+            <a href="movielist.html?browse_by_genre=true&genre_id=8" id="8">Documentary</a><br>
+            <a href="movielist.html?browse_by_genre=true&genre_id=9" id="9">Drama</a><br>
+            <a href="movielist.html?browse_by_genre=true&genre_id=10" id="10">Family</a><br>
+            <a href="movielist.html?browse_by_genre=true&genre_id=11" id="11">Fantasy</a><br>
+            <a href="movielist.html?browse_by_genre=true&genre_id=12" id="12">History</a><br>
+            <a href="movielist.html?browse_by_genre=true&genre_id=13" id="13">Horror</a><br>
+            <a href="movielist.html?browse_by_genre=true&genre_id=14" id="14">Music</a><br>
+            <a href="movielist.html?browse_by_genre=true&genre_id=15" id="15">Musical</a><br>
+            <a href="movielist.html?browse_by_genre=true&genre_id=16" id="16">Mystery</a><br>
+            <a href="movielist.html?browse_by_genre=true&genre_id=17" id="17">Reality-TV</a><br>
+            <a href="movielist.html?browse_by_genre=true&genre_id=18" id="18">Romance</a><br>
+            <a href="movielist.html?browse_by_genre=true&genre_id=19" id="19">Sci-Fi</a><br>
+            <a href="movielist.html?browse_by_genre=true&genre_id=20" id="20">Sport</a><br>
+            <a href="movielist.html?browse_by_genre=true&genre_id=21" id="21">Thriller</a><br>
+            <a href="movielist.html?browse_by_genre=true&genre_id=22" id="22">War</a><br>
+            <a href="movielist.html?browse_by_genre=true&genre_id=23" id="23">Western</a><br>
+    		</div>
+    		
+    		<div id = "titlecolumn">
+            <H4>Browse Movies by Title</H4>
+            
+            <a href="movielist.html?browse_by_title=true&title_id=0" id="0">0</a>
+            <a href="movielist.html?browse_by_title=true&title_id=1" id="1">1</a>
+            <a href="movielist.html?browse_by_title=true&title_id=2" id="2">2</a>
+            <a href="movielist.html?browse_by_title=true&title_id=3" id="3">3</a>
+            <a href="movielist.html?browse_by_title=true&title_id=4" id="4">4</a>
+            <a href="movielist.html?browse_by_title=true&title_id=5" id="5">5</a>
+            <a href="movielist.html?browse_by_title=true&title_id=6" id="6">6</a>
+            <a href="movielist.html?browse_by_title=true&title_id=7" id="7">7</a>
+            <a href="movielist.html?browse_by_title=true&title_id=8" id="8">8</a> 
+            <a href="movielist.html?browse_by_title=true&title_id=9" id="9">9</a><br>
+            
+            <a href="movielist.html?browse_by_title=true&title_id=A" id="A">A</a>
+            <a href="movielist.html?browse_by_title=true&title_id=B" id="B">B</a>
+            <a href="movielist.html?browse_by_title=true&title_id=C" id="C">C</a>
+            <a href="movielist.html?browse_by_title=true&title_id=D" id="D">D</a>
+            <a href="movielist.html?browse_by_title=true&title_id=E" id="E">E</a>
+            <a href="movielist.html?browse_by_title=true&title_id=F" id="F">F</a>
+            <a href="movielist.html?browse_by_title=true&title_id=G" id="G">G</a>
+            <a href="movielist.html?browse_by_title=true&title_id=H" id="H">H</a>
+            <a href="movielist.html?browse_by_title=true&title_id=I" id="I">I</a> 
+            <a href="movielist.html?browse_by_title=true&title_id=J" id="J">J</a>
+            <a href="movielist.html?browse_by_title=true&title_id=K" id="K">K</a>
+            <a href="movielist.html?browse_by_title=true&title_id=L" id="L">L</a>
+            <a href="movielist.html?browse_by_title=true&title_id=M" id="M">M</a><br>
+            <a href="movielist.html?browse_by_title=true&title_id=N" id="N">N</a>
+            <a href="movielist.html?browse_by_title=true&title_id=O" id="O">O</a>
+            <a href="movielist.html?browse_by_title=true&title_id=P" id="P">P</a>
+            <a href="movielist.html?browse_by_title=true&title_id=Q" id="Q">Q</a>
+            <a href="movielist.html?browse_by_title=true&title_id=R" id="R">R</a> 
+            <a href="movielist.html?browse_by_title=true&title_id=S" id="S">S</a>
+            <a href="movielist.html?browse_by_title=true&title_id=T" id="T">T</a>
+            <a href="movielist.html?browse_by_title=true&title_id=U" id="U">U</a>
+            <a href="movielist.html?browse_by_title=true&title_id=V" id="V">V</a>
+            <a href="movielist.html?browse_by_title=true&title_id=W" id="W">W</a>
+            <a href="movielist.html?browse_by_title=true&title_id=X" id="X">X</a>
+            <a href="movielist.html?browse_by_title=true&title_id=Y" id="Y">Y</a> 
+            <a href="movielist.html?browse_by_title=true&title_id=Z" id="Z">Z</a> 
+    		</div>
+    </div>
+    </body>
+    
+</html>

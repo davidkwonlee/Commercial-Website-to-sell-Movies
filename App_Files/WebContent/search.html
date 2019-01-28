@@ -1,0 +1,89 @@
+<!-- This page will be redirected from any url if you are not logged in -->
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    
+    <style>
+    #form_container{
+        padding-left:30px;
+    }
+    </style>
+        <!-- Bootstrap CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    
+</head>
+
+
+<body>
+        <nav class="navbar fixed-top  navbar-dark bg-dark" style="background-color:black;">
+            
+            <!---<a class = "navbar-brand" href="#" style="color:white;">FabFlix</a>--->
+            
+            <div class="collapse navbar-collapse" id ="navbarSupportedContent">
+                
+                <ul class="navbar-nav mr-auto" style="list-style-type: none;">
+                
+                    <li class="nav-item active" style="list-style-type: none;">
+
+                        <a class="nav-link" href= "index.html" style="color:white; padding-left:30px; padding-right:30px; display:inline-block; float:none;">Home</a>
+
+                    </li>
+  
+                    <li class="nav-item active" style="list-style-type: none;">
+
+                        <a class="nav-link" href="search.html" style="color:white; padding-left:30px; padding-right:30px; display:inline-block; float:none;">Advanced Search</a>
+
+                    </li>
+                    
+                    <li class="nav-item active" style="list-style-type: none;">
+
+                        <a class="nav-link" href="login.html" style="color:white; padding-left:30px; padding-right:30px; display:inline-block; float:none;">Sign in</a>
+                    </li>
+                    
+                    <li>
+                    <a href ="cart.html" id= "checkout" class="btn btn-info" role = "button">Check Out</a>   
+                    
+                    </li>
+                    
+                </ul>
+
+                   
+            </div>
+    
+        </nav>
+        <h1 align="center">Advanced Search</h1>
+
+<div id = "form_container">
+    <form id="search_form" method="get" action="movielist.html?search=true">
+        <label><b>Title</b></label>
+        <input type="hidden" name="search" align = "right" value="true">
+        <input type="text" placeholder="Enter Title" name="title">
+        <br>
+        <label><b>Year</b></label>
+        <input type="text" placeholder="Enter Year" name="year">
+        <br>
+        <label><b>Director</b></label>
+        <input type="text" placeholder="Enter Director" name="director">
+        <br>
+         <label><b>Star's Name</b></label>
+        <input type="text" placeholder="Enter Star's name" name="star_name">
+        <br>
+        
+        <input type="submit" value="Search">
+    </form>
+
+</div>
+<div id="login_error_message"></div>
+<!-- Load jQuery and Bootstrap JS -->
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+
+</body>
+
+
+</html>

@@ -1,0 +1,4 @@
+SearchServlet.Java: We utilize LIKE in the query to match the substring of name of stars, titles, and directors. Lines 51, 53, 55, 57 and 59.
+
+
+TitleServlet.Java: We utilize LIKE in the query to find titles by a substring of it. So substring “a” would return all titles of movies that start with “a”.

@@ -1,0 +1,93 @@
+<!-- This example is following frontend and backend separation.
+
+    This .html performs two steps:
+    1. Create a html template skeleton, with all the elements defined (some left empty) and named with ids.
+    2. Load single-star.js to populate the data into empty elements.
+    -->
+
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+    <title>Single Star</title>
+</head>
+<body>
+        <nav class="navbar fixed-top  navbar-dark bg-dark" style="background-color:black;">
+            
+            <!---<a class = "navbar-brand" href="#" style="color:white;">FabFlix</a>--->
+            
+            <div class="collapse navbar-collapse" id ="navbarSupportedContent">
+                
+                <ul class="navbar-nav mr-auto" style="list-style-type: none;">
+                
+                    <li class="nav-item active" style="list-style-type: none;">
+
+                        <a class="nav-link" href= "index.html" style="color:white; padding-left:30px; padding-right:30px; display:inline-block; float:none;">Home</a>
+
+                    </li>
+  
+                    <li class="nav-item active" style="list-style-type: none;">
+
+                        <a class="nav-link" href="search.html" style="color:white; padding-left:30px; padding-right:30px; display:inline-block; float:none;">Advanced Search</a>
+
+                    </li>
+                    
+                    <li class="nav-item active" style="list-style-type: none;">
+
+                        <a class="nav-link" href="login.html" style="color:white; padding-left:30px; padding-right:30px; display:inline-block; float:none;">Sign in</a>
+                    </li>
+                    
+                    
+                    <li>
+                    <a href ="cart.html" id= "checkout" class="btn btn-info" role = "button">Check Out</a>   
+                    
+                    </li>
+                    
+                </ul>
+
+                   
+            </div>
+    
+        </nav>
+<h1>Single Star Page</h1>
+
+<!-- H3 body is left empty here, will be populated with the data retrieved with single-star.js -->
+<!-- single-star.js will find this html element by it's id "star_info" -->
+<h3 id="star_info"></h3>
+<table id=movie_table class="table table-striped">
+    <thead>
+    <tr>
+        <th>Movie Title</th>
+        <th>Release Year</th>
+        <th>Director</th>
+        <th>
+    </tr>
+    </thead>
+
+    <!-- Table body is left empty here, will be populated with the data retrieved with single-star.js -->
+    <!-- single-star.js will find this html element by it's id "movie_table_body" -->
+    <tbody id=movie_table_body></tbody>
+</table>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+
+<!-- Load our own JS file -->
+<!-- The path is relative to single-star.html, since these two files are in the same directory -->
+<!-- Note the url does not contain a "/" in the beginning, which means the url is relative to current path
+     otherwise the url is relative to the root path-->
+<script src="single-star.js"></script>
+</body>
+
+
+</html>
