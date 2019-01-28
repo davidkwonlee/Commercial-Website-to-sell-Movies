@@ -1,6 +1,6 @@
 # Commercial Website to sell Movies
 
-A Full Stack Web Application to browse, search and purchase digital movies.  
+A Full Stack J2EE Enterprise style Web Application with over 80,000 MySQL database products and dynamic web features such as full-text query search, database caching, user password encryption, and Java based Web Services.
 
 The project was developed using:  
 -Java EE framework for advanced functionalities (JDBC, JSP, Servlets, etc).   
